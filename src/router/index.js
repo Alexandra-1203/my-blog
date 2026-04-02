@@ -31,15 +31,12 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach((to) => {
-  const user = localStorage.getItem('user')
-
-  // Если маршрут требует авторизацию и токена нет
-  if (to.meta.requiresAuth && !user) {
-    return '/login' // отправляем на страницу входа
-  } else {
-    return true // идём дальше
-  }
-})
+// router.beforeEach((to) => {
+//   const user = localStorage.getItem('user')
+//   if (to.meta.requiresAuth && !user) {
+//     return '/login'
+//   }
+//   return true
+// })
 
 export default router
