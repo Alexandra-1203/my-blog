@@ -39,4 +39,21 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+
+h1,
+h2,
+h3,
+h4,
+p,
+.post h3,
+.description {
+  word-wrap: break-word;
+   word-break: break-word; 
+  overflow-wrap: break-word;
+  max-width: 100%;
+  hyphens: auto;                    /* автоматические переносы */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
 </style>
